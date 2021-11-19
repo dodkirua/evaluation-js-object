@@ -1,0 +1,110 @@
+:root {
+--grey: #f5f5f5;
+--black: #333;
+--green : #95d6b7;
+--blue : #45bfe7;
+--red : #dc5350;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    padding: 1rem;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: var(--grey);
+}
+
+h1, p{
+    text-transform: capitalize;
+}
+
+h1 {
+    font-weight: bold;
+}
+
+.title, .addItem, .clear {
+    margin: 1rem;
+}
+.iconDiv, .toDoLine, body, .addItem{
+    display: flex;
+}
+
+.iconDiv, .toDoLine, .addItem {
+    flex-direction: row;
+}
+
+.button button, .addItemInput input{
+    padding: 0.8rem;
+}
+
+.addItem, .clear {
+    border: var(--green) 2px solid;
+    border-radius: 5px;
+}
+
+.button button {
+    color: var(--green);
+    background-color: var(--grey);
+}
+
+.clear button, .addItemInput input {
+    border-radius: 5px 0 0 5px;
+    border: none;
+}
+
+.addItemButton button{
+    border-radius: 0 5px 5px 0;
+    border-left: var(--green) 1px solid;
+    border-bottom: none;
+    border-right: none;
+    border-top: none;
+}
+
+.addItemInput input{
+
+    color: gray;
+}
+
+.toDoLine{
+    width: 80%;
+}
+
+.iconDiv {
+    width: 15%;
+}
+
+.far {
+    margin-left: 1rem;
+}
+
+.toDoText {
+    width: 85%;
+}
+
+.fa-check-circle {
+    color : var(--green);
+}
+
+.toDoText {
+    color: var(--black);
+}
+
+.fa-times-circle {
+    color: var(--red);
+}
+
+.fa-edit {
+    color: var(--blue);
+}
