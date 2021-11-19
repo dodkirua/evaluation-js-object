@@ -10,6 +10,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
 }
 
 html {
@@ -37,7 +38,7 @@ h1 {
 .title, .addItem, .clear {
     margin: 1rem;
 }
-.iconDiv, .toDoLine, body, .addItem{
+.iconDiv, .toDoLine, body, .addItem, button{
     display: flex;
 }
 
@@ -45,8 +46,20 @@ h1 {
     flex-direction: row;
 }
 
+.toDoList {
+    margin: 3rem 1rem;
+}
+
 .button button, .addItemInput input{
     padding: 0.8rem;
+}
+
+.addItem, .addItemInput, .toDoList {
+    width: 90%;
+}
+
+input {
+    width: 100%;
 }
 
 .addItem, .clear {
@@ -59,7 +72,7 @@ h1 {
     background-color: var(--grey);
 }
 
-.clear button, .addItemInput input {
+.clear button, .addItemInput input,input:focus  {
     border-radius: 5px 0 0 5px;
     border: none;
 }
@@ -73,24 +86,24 @@ h1 {
 }
 
 .addItemInput input{
-
     color: gray;
 }
 
-.toDoLine{
-    width: 80%;
+.toDoText{
+    width: 90%;
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
 .iconDiv {
-    width: 15%;
+    width: 10%;
+    justify-content: space-between;
+    padding: 0.5rem;
 }
 
 .far {
     margin-left: 1rem;
-}
-
-.toDoText {
-    width: 85%;
+    font-size: 1.5rem;
 }
 
 .fa-check-circle {

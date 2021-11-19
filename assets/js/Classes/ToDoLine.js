@@ -12,7 +12,7 @@ export class ToDoLine extends Element{
         super('toDoLine');
         let textDiv = new TodoText(text);
         let icon = new IconDiv();
-        this.element.id = 'line'.concat(id);
+        this.element.dataset.id = id;
         this.element.append(textDiv.getElement());
         this.element.append(icon.getElement());
     }
