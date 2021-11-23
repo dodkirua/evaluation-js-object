@@ -1,4 +1,4 @@
-import {Icon} from "./Icon";
+import {Icon} from "./Icon.mjs";
 
 export class DelIcon extends Icon{
     /**

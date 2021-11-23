@@ -1,6 +1,6 @@
-import {Element} from "./Abstract/Element";
-import {Button} from "./Button";
-import {AddItemInput} from "./AddItemInput";
+import {Element} from "./Abstract/Element.mjs";
+import {Button} from "./Button.mjs";
+import {AddItemInput} from "./AddItemInput.mjs";
 
 export class AddItem extends Element {
     /**

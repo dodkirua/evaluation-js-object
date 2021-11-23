@@ -1,6 +1,6 @@
-import {Element} from "./Abstract/Element";
+import {Element} from "./Abstract/Element.mjs";
 
-export class TodoText extends Element{
+export class ToDoText extends Element{
     /**
      * constructor for ToDo text
      * @param text

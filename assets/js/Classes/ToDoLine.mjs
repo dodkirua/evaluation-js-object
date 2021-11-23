@@ -1,6 +1,6 @@
-import {TodoText} from "./ToDoText";
-import {IconDiv} from "./IconDiv";
-import {Element} from "./Abstract/Element";
+import {ToDoText} from "./ToDoText.mjs";
+import {IconDiv} from "./IconDiv.mjs";
+import {Element} from "./Abstract/Element.mjs";
 
 export class ToDoLine extends Element{
     /**
@@ -10,7 +10,7 @@ export class ToDoLine extends Element{
      */
     constructor(text,id) {
         super('toDoLine');
-        let textDiv = new TodoText(text);
+        let textDiv = new ToDoText(text);
         let icon = new IconDiv();
         this.element.dataset.id = id;
         this.element.append(textDiv.getElement());

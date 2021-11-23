@@ -1,7 +1,7 @@
-import {Title} from "./Title";
-import {Button} from "./Button";
-import {AddItem} from "./AddItem";
-import {ToDoList} from "./ToDoList";
+import {Title} from "./Title.mjs";
+import {Button} from "./Button.mjs";
+import {AddItem} from "./AddItem.mjs";
+import {ToDoList} from "./ToDoList.mjs";
 
 export class Display {
     /**

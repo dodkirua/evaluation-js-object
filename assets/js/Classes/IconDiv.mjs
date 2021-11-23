@@ -1,7 +1,7 @@
-import {Element} from "./Abstract/Element";
-import {DelIcon} from "./DelIcon";
-import {CheckCircleIcon} from "./CheckCircleIcon";
-import {EditIcon} from "./EditIcon";
+import {Element} from "./Abstract/Element.mjs";
+import {DelIcon} from "./DelIcon.mjs";
+import {CheckCircleIcon} from "./CheckCircleIcon.mjs";
+import {EditIcon} from "./EditIcon.mjs";
 
 export class IconDiv extends Element {
     /**

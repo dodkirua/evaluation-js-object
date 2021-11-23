@@ -1,4 +1,4 @@
-import {Element} from "./Abstract/Element";
+import {Element} from "./Abstract/Element.mjs";
 
 export class AddItemInput extends Element {
     /**

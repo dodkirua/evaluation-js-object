@@ -38,7 +38,7 @@ function devConfig() {
                 },
                 // Règles fichiers images
                 {
-                    test: /\.(png|jpe?g|gif)$/i,
+                    test: /\.(png|jpe?g|gif|svg|ico)$/i,
                     type: 'asset/resource',
                     generator: {filename: 'build/images/[name][ext]'}
                 },
@@ -82,14 +82,14 @@ function prodConfig() {
 
                 // Règles fichiers images
                 {
-                    test: /\.(png|jpe?g|gif)$/i,
+                    test: /\.(png|jpe?g|gif|svg|ico)$/i,
                     type: 'asset/resource',
                     generator: {filename: 'build/images/[name][ext]'}
                 },
 
                 // Configuration de babel pour les navigateurs plus anciens.
                 {
-                    test: /\.js$/,
+                    test: /\.(m)js$/,
                     loader: 'babel-loader',
                     options: {
                         presets: ['@babel/preset-env'],
