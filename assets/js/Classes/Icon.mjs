@@ -9,9 +9,9 @@ export class Icon extends Element{
      */
     constructor(className, iconClass1, iconClass2) {
         super(className);
-        let i = document.createElement('i');
-        i.classList.add(iconClass1);
-        i.classList.add(iconClass2);
-        this.element.append(i);
+        this.i = document.createElement('i');
+        this.i.classList.add(iconClass1);
+        this.i.classList.add(iconClass2);
+        this.element.append(this.i);
     }
 }

@@ -9,24 +9,27 @@ export class Display {
       */
     constructor() {
         let body = document.body;
-        let title = new Title();
-        let add = new AddItem();
+        body.innerHTML = '';
+        this.title = new Title();
+        this.add = new AddItem();
         const storage = window.localStorage;
         const nb = storage.getItem('number')
         let array = [];
         if (nb !== null)        {
-            for (let i = 1 ; i <= nb ; i++) {
-                let item = storage.getItem('line'+i);
+            for (let i = 0 ; i <= nb-1 ; i++) {
+                let item = storage.getItem('line'+(i+1));
                 if (item !== null){
                  array[i] = item;
                 }
             }
         }
-        let list = new ToDoList(array);
-        let button = new Button('clear', 'Clear Items')
-        body.append(title.getElement());
-        body.append(add.getElement());
-        body.append(list.getElement());
-        body.append(button.getElement());
+        this.list = new ToDoList(array);
+        this.button = new Button('clear', 'Clear Items')
+        body.append(this.title.getElement());
+        body.append(this.add.getElement());
+        body.append(this.list.getElement());
+        body.append(this.button.getElement());
+
+
     }
 }

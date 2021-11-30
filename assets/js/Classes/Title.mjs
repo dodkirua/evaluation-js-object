@@ -6,8 +6,8 @@ export class Title extends Element {
      */
     constructor() {
         super('title');
-        let h1 = document.createElement('h1');
-        h1.innerHTML = 'to do list';
-        this.element.append(h1);
+        this.h1 = document.createElement('h1');
+        this.h1.innerHTML = 'to do list';
+        this.element.append(this.h1);
     }
 }

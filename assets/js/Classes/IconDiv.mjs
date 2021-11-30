@@ -9,11 +9,11 @@ export class IconDiv extends Element {
      */
     constructor() {
         super('iconDiv');
-        let del = new DelIcon();
-        let circle = new CheckCircleIcon();
-        let edit = new EditIcon();
-        this.element.append(circle.getElement());
-        this.element.append(edit.getElement());
-        this.element.append(del.getElement());
+        this.del = new DelIcon();
+        this.circle = new CheckCircleIcon();
+        this.edit = new EditIcon();
+        this.element.append(this.circle.getElement());
+        this.element.append(this.edit.getElement());
+        this.element.append(this.del.getElement());
     }
 }

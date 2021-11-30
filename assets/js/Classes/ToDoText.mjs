@@ -1,4 +1,5 @@
 import {Element} from "./Abstract/Element.mjs";
+import {TodoMod} from "./TodoMod.mjs";
 
 export class ToDoText extends Element{
     /**
@@ -9,7 +10,10 @@ export class ToDoText extends Element{
         super('toDoText');
         this.p = document.createElement('p');
         this.setP(text);
+        let todoMod = new TodoMod().getElement();
+        todoMod.style.display = 'none';
         this.element.append(this.p);
+        this.element.append(todoMod);
     }
 
     /**

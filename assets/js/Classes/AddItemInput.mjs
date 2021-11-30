@@ -6,8 +6,8 @@ export class AddItemInput extends Element {
      */
     constructor() {
         super('addItemInput');
-        let input = document.createElement('input');
-        input.placeholder = 'Name...';
-        this.element.append(input);
+        this.input = document.createElement('input');
+        this.input.placeholder = 'Name...';
+        this.element.append(this.input);
     }
 }

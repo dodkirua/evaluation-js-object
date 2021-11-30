@@ -9,8 +9,8 @@ export class Button extends Element {
     constructor(classname, value) {
         super(classname);
         this.element.classList.add('button')
-        let button = document.createElement('button');
-        button.innerHTML = value;
-        this.element.append(button);
+        this.button = document.createElement('button');
+        this.button.innerHTML = value;
+        this.element.append(this.button);
     }
 }

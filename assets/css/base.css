@@ -50,34 +50,42 @@ h1 {
     margin: 3rem 1rem;
 }
 
-.button button, .addItemInput input{
+.button button, .addItemInput input, .todoMod button{
     padding: 0.8rem;
 }
 
-.addItem, .addItemInput, .toDoList {
+.addItem, .addItemInput, .toDoList, .todoMod, .todoMod input {
     width: 90%;
 }
 
-input {
+.modSubmit button {
     width: 100%;
 }
 
-.addItem, .clear {
+.modSubmit {
+    width: 10%;
+}
+
+.addItem input {
+    width: 100%;
+}
+
+.addItem, .clear, .todoMod {
     border: var(--green) 2px solid;
     border-radius: 5px;
 }
 
-.button button {
+.button button, .todoMod button {
     color: var(--green);
     background-color: var(--grey);
 }
 
-.clear button, .addItemInput input,input:focus  {
+.clear button, .addItemInput input,input:focus {
     border-radius: 5px 0 0 5px;
     border: none;
 }
 
-.addItemButton button{
+.addItemButton button, .todoMod button{
     border-radius: 0 5px 5px 0;
     border-left: var(--green) 1px solid;
     border-bottom: none;
